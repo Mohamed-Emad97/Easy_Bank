@@ -1,0 +1,66 @@
+//Import Files
+@use "./helpers/Variablies.scss" as *;
+
+@use "./helpers/Mixin.scss" as *;
+
+//Navbar File
+@use "./Components/Navbar/Navbar.scss" as *;
+
+//Home File
+@use "./Components/Home/Home.scss" as *;
+
+//About File
+@use "./Components/About/About.scss" as *;
+
+//Contact File
+@use "./Components/Contact/Contact.scss" as *;
+
+//Blog File
+@use "./Components/Blog/Blog.scss" as *;
+
+
+//Rules
+
+.center {
+  @include center();
+}
+
+#home{
+  background-image: url(./images/bg-intro-desktop.svg);
+  background-color: $Very-Light-Gray;
+  background-size: 70%;
+  background-position: 150% 60%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1055px) and (min-width:676px) {
+  #home{
+    background-image: url(./images/bg-intro-mobile.svg);
+    background-color: $Very-Light-Gray;
+    background-size: 100%;
+    background-position: 150% 60%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 676px) {
+  #home{
+    background-image: url(./images/bg-intro-mobile.svg);
+    background-color: $Very-Light-Gray;
+    background-size: 100%;
+    background-position: 100% 2%;
+    background-repeat: no-repeat;
+  }
+}
+
+$socials: ("facebook": #1877f2, "twitter": #1da1f2, "dribble": #9ba5a8, "google": #dd4b39, "github": #333,"instagram": #e1306c, "linkedin": #313335, "pinterest": #e60023, "youtube": #ff0000);
+
+@each $name, $color in $socials {
+    .#{$name}{
+        cursor: pointer;
+        transition: all 1s;
+    }
+    .#{$name}:hover{
+        color: $color !important;
+    }
+}

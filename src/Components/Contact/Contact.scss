@@ -1,0 +1,31 @@
+//Import Files
+@use "../../helpers/Mixin.scss" as *;
+@use "../../helpers/Variablies.scss" as *;
+
+//Rules
+#contact{
+    background-color: $Dark-Blue;
+    .social{
+        color: $Grayish-Blue;
+    }
+    ul{
+        li{
+            a{
+                color: $Light-Grayish-Blue;
+                text-decoration: none;
+                transition: all 1s;
+                &:hover{
+                    color: $Bright-Cyan;
+                }
+            }
+        }
+    }
+    .leftSide{
+        .btnMain{
+            @include btnMain($White, linear-gradient(to left,$Lime-Green, $Bright-Cyan), $White, linear-gradient(to left,$Lime-Green, $Bright-Cyan));
+        }
+        p{
+            color: $Grayish-Blue;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+//Import File
+@use "../../helpers/Variablies.scss" as *;
+@use "../../helpers/Mixin.scss" as *;
+
+//Rules
+#about{
+    background-color: $Light-Grayish-Blue;
+    .mainHeading{
+        h3{
+            color: $Dark-Blue;
+        }
+        p{
+            color: $Grayish-Blue;
+        }
+    }
+    .content{
+        h4{
+            color: $Dark-Blue;
+        }
+        p{
+            color: $Grayish-Blue;
+        }
+    }
+}

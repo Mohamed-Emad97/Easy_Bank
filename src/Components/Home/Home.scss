@@ -1,0 +1,75 @@
+//Import File
+@use "../../helpers/Mixin.scss" as *;
+@use "../../helpers/Variablies.scss" as *;
+
+//Rules
+#home{
+    overflow: hidden;
+    // &::-webkit-scrollbar {
+    //     display: none;
+    // }
+    // &{
+    //     -ms-overflow-style: none;  /* IE and Edge */
+    //     scrollbar-width: none;  /* Firefox */
+    // }
+    .image{
+        .homeImg{
+            position: absolute;
+            top: -70px;
+            right: -130px;
+            z-index: 2;
+        }
+    }
+    .caption{
+        h1{
+            color: $Dark-Blue;
+        }
+        p{
+            color: $Grayish-Blue;
+        }
+        .btnMain{
+            @include btnMain($White, linear-gradient(to left,$Lime-Green, $Bright-Cyan), $White, linear-gradient(to left,$Lime-Green, $Bright-Cyan));
+        }
+    }
+}
+
+@media (max-width: 1055px) and (min-width:676px) {
+    #home{
+        .image{
+            .homeImg{
+                position: absolute;
+                top: 20%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+        .caption{
+            margin-top: 260px;
+            text-align: center;
+            .btnMain{
+                align-self: normal !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 676px) {
+    #home{
+        .image{
+            .homeImg{
+                position: absolute;
+                top: 20%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                z-index: 2;
+            }
+        }
+        .caption{
+            margin-top: 150px;
+            text-align: center;
+            .btnMain{
+                align-self: normal !important;
+            }
+        }
+    }
+}
