@@ -14,7 +14,9 @@ export default function Home() {
                 will be a one-stop-shop for spending , saving, <br/>
                 budgeting, investing, and much more.
               </p>
-              <button className='btn btnMain px-4 p-2 rounded-4 align-self-start'>Request Invite</button>
+              <div className="button">
+                <button className='btn btnMain px-4 p-2 rounded-4 align-self-start'>Request Invite</button>
+              </div>
             </div>
           </div>
           <div className="image">

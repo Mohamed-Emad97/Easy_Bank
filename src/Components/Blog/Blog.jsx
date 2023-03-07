@@ -6,14 +6,14 @@ export default function Blog() {
     <>
     <section id="blog" className='py-5'>
       <div className="container">
-        <div className="mainHeading my-4">
+        <div className="mainHeading text-lg-start text-md-center text-sm-center text-center my-4">
           <h3>Latest Articles</h3>
         </div>
         <div className="row">
           {blogCards.map((blog,i) => 
             <>
               <div className="col-lg-3 col-md-4 col-sm-6 my-2">
-                <div className="blogCard">
+                <div className="blogCard text-lg-start text-md-center text-sm-center text-center">
                   <div className="img">
                     <img src={blog.img} alt="about-pic" className="w-100" />
                   </div>

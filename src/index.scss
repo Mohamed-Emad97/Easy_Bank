@@ -25,11 +25,13 @@
   @include center();
 }
 
+
 #home{
   background-image: url(./images/bg-intro-desktop.svg);
   background-color: $Very-Light-Gray;
-  background-size: 70%;
-  background-position: 150% 60%;
+  //background-size: 70%;
+  //background-position: 150% 60%;
+  background-position:  40vw -40vh;
   background-repeat: no-repeat;
 }
 
@@ -48,7 +50,7 @@
     background-image: url(./images/bg-intro-mobile.svg);
     background-color: $Very-Light-Gray;
     background-size: 100%;
-    background-position: 100% 2%;
+    background-position: 100% -5%;
     background-repeat: no-repeat;
   }
 }

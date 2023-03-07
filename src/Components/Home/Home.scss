@@ -4,19 +4,12 @@
 
 //Rules
 #home{
-    overflow: hidden;
-    // &::-webkit-scrollbar {
-    //     display: none;
-    // }
-    // &{
-    //     -ms-overflow-style: none;  /* IE and Edge */
-    //     scrollbar-width: none;  /* Firefox */
-    // }
     .image{
+        overflow-x: hidden;
         .homeImg{
             position: absolute;
             top: -70px;
-            right: -130px;
+            right: 0px;
             z-index: 2;
         }
     }
@@ -44,7 +37,8 @@
             }
         }
         .caption{
-            margin-top: 260px;
+            //margin-top: 260px;
+            justify-content: end !important;
             text-align: center;
             .btnMain{
                 align-self: normal !important;
@@ -65,7 +59,8 @@
             }
         }
         .caption{
-            margin-top: 150px;
+            //margin-top: 150px;
+            justify-content: end !important;
             text-align: center;
             .btnMain{
                 align-self: normal !important;

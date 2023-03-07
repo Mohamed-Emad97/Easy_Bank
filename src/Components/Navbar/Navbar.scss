@@ -5,6 +5,8 @@
 //Rules
 header{
     background-color: $White;
+    position: relative;
+    z-index: 3333333;
     nav {
         ul {
             li{
